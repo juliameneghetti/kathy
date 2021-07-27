@@ -1,0 +1,444 @@
+*{
+    font-family: 'Spartan', sans-serif;
+    color: rgb(226, 115, 160);
+
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: medium;
+
+    padding: 50px 40px;
+}
+
+
+/*HEADER*/
+
+    /*LOGO*/
+
+    .logoTamaño{
+        height: 100px;
+        width: 350px;
+        
+        padding-left: 30px;
+    }
+
+    /*MENÚ DE NAVEGACIÓN*/
+
+    .menuFlex{
+	    display: flex;
+
+	    justify-content: space-around;
+        align-items: center;        
+        
+        margin: 30px 0;
+    }
+
+    .menuFlex ul{  
+        display: flex;
+
+	    justify-content: space-around;
+        list-style: none;
+
+        width: 600px;
+        padding: 0px 20px;
+    }
+
+    .menuFlex ul li a{
+	    text-decoration: none;
+        color: rgb(77, 77, 77);
+    }
+
+    .menuFlex ul li a:hover {
+        text-decoration: none;
+
+        color: rgb(226, 115, 160);
+        cursor: pointer;
+    }
+
+    .cuentaFlex{
+	    display: flex;
+
+        justify-content: flex-end;
+	    
+        width: 400px;
+    }
+
+    .cuentaFlex img{
+        width: 30px;
+        padding-right: 40px; 
+    }
+
+
+/*BODY*/
+
+body{
+    background-color: black;
+}
+
+    /*VIDEO HOME*/
+
+    .videoHome{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /*BOTÓN TIENDA*/
+
+    .botonFlex{
+        display: flex;
+
+	    justify-content: center;
+    }   
+
+    .botonTienda{
+        background-image: url("../MULTIMEDIA/IMG/HOME/mancha.png");
+        background-repeat: no-repeat;
+        background-position: bottom; 
+        
+        margin-top: 100px;
+        padding: 70px 50px 70px 0;   
+    }
+
+    .botonEnlace{ 
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        
+	    text-decoration: none;
+    }
+
+    .animacionBoton:hover{
+        animation: headShake;
+        animation-duration: 1s;
+    }
+
+    /*SECCIÓN SOBRE MI*/
+
+    .flexSobreMi{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    
+        background-image: url("../MULTIMEDIA/IMG/SOBRE_MI/mancha.png");
+        background-repeat: no-repeat;
+        background-position: right;   
+    }
+    
+    .flexSobreMi img{
+        width: 600px;
+        height: 750px;
+
+        padding-top: 80px;
+    }
+    
+    .flexSobreMi p{
+        text-align: right;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        line-height: 25px;
+
+        color: white;
+
+        width: 400px;
+        height: 700px;
+
+        padding-top: 250px;
+        padding-right: 70px;
+    }
+
+    /*SECCIÓN NEW IN*/
+
+    .gridNewIn{
+        display: grid;
+        grid-template-areas:
+        "next next next next"
+        "love love love love"
+        "pacman pacman pacman pacman";
+
+        padding: 0px 40px;
+    }
+
+    .gridNewIn div{
+        display: grid;
+
+        border: 5px solid rgb(185, 134, 155);
+        
+        height: 200px;
+
+        margin: 50px 0 0;
+        padding-left: 50px;
+    }
+
+    .gridNewIn div p{
+        display: grid;
+
+        justify-content: flex-start;
+        align-content: center;
+
+        font-family: 'Qahiri', sans-serif;
+        font-size: 150px;
+
+        text-shadow: 50px rgb(0, 0, 0);
+        color: rgb(185, 134, 155);
+    }
+
+    .gridNewIn div a{
+        text-decoration: none;
+    }
+      
+    .gridNextL{
+        background-image: url("../MULTIMEDIA/IMG/NEW_IN/next.png");
+        background-size:cover;
+    }
+
+    .gridLoveY{
+        background-image: url("../MULTIMEDIA/IMG/NEW_IN/love.png");
+        background-size: cover;
+    }
+
+    .gridPacman{
+        background-image: url("../MULTIMEDIA/IMG/NEW_IN/pacman.png");
+        background-size: cover;
+    }
+
+    .fotoUno{
+        grid-area: next;
+    }
+    
+    .fotoDos{
+        grid-area: love;
+    }
+    
+    .fotoTres{
+        grid-area: pacman;
+    }
+
+    .animacionNewIn:hover{
+        animation: bounce;
+        animation-duration: 1s;
+    }
+
+    /*SECCIÓN TIENDA*/
+
+    .backgroundTienda{
+        background-image: url("../MULTIMEDIA/IMG/TIENDA/mancha.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    .secciónTienda{
+        display: flex;
+	    flex-flow: wrap;
+	    justify-content:space-around;
+        text-align: center;
+
+        padding-top: 50px;
+    }
+
+    .secciónTienda img{
+        border-top: 30px;
+        border-left: 30px;
+        border-bottom: 120px;
+        border-right: 30px;
+
+        border-style: solid;
+
+        border-color: rgb(234 155 187 / 55%);
+
+        width: 300px;
+        height: 400px;
+
+        transition: all 2s;
+    }
+
+    .secciónTienda img:hover{
+        
+
+        width: 400px;
+        height: 500px;
+    }
+
+    .pieFoto{
+        background-color: rgb(234 155 187 / 55%);
+        margin-top: 3px;
+        margin-bottom: 100px;
+    }
+
+    .pieFoto p{
+        font-size: 14px;
+        color: white;
+
+        text-align: center;
+
+        padding: 15px;
+    }
+
+    /*SECCIÓN GALERÍA*/
+
+    .gridContainer{    
+        display: grid;
+        grid-template-areas:
+        "uno dos dos"
+        "tres tres cuatro"
+        "cinco cinco cinco";
+
+        margin: 0 40px;
+    }
+    
+    .gridContainer div{
+        display: grid;
+        justify-content: center;
+
+        border: rgb(250, 145, 227) 2px solid;
+        border-radius: 3px;
+
+        padding: 10px;
+    }
+    
+    .gridContainer img{
+        border: 10px solid white;
+        border-radius: 3px;
+
+        width: 400px;
+        height: 500px;
+    }
+    
+    .gridContainer video{
+        border: 10px solid white;
+        border-radius: 3px;
+
+        width: 700px;
+        height: 500px;
+    }
+    
+    .valor1{
+        grid-area: uno;
+    }
+    
+    .valor2{
+        grid-area: dos;
+    }
+    
+    .valor3{
+        grid-area: tres;
+    }
+    
+    .valor4{
+        grid-area: cuatro;
+    }
+    
+    .valor5{
+        grid-area: cinco;
+    }
+
+
+    /*SECCIÓN CONTACTO*/
+
+    form{
+        background-image: url("../MULTIMEDIA/IMG/CONTACTO/camcont.png");
+        background-repeat: no-repeat;
+        background-position: right;    
+    }
+
+    form fieldset{
+        margin-left: 40px;
+        padding: 40px;
+    }
+
+    form fieldset legend{
+        font-size: 11px;
+        color: white;
+        text-align: center;    
+    }
+
+    form fieldset p{
+        font-size: 11px;
+        color: white;
+    } 
+
+    form fieldset div{
+        margin: 30px 0;
+    }
+
+    form fieldset div label{
+        padding-right: 30px;
+    }
+
+    form fieldset div input{    
+        padding: 5px 15px 5px 15px;
+    }
+
+    .formulario{
+        padding: 30px 0 15px;
+    }
+
+
+/*FOOTER*/
+
+    footer{
+        background-color: rgb(73 72 72 / 17%);
+
+        text-align: center;
+
+        padding: 20px;
+        margin-top: 100px;    
+    }
+
+    footer div a{
+        text-decoration: none;
+    }
+
+    footer div p{
+        font-size: 13px;
+
+        padding-top: 30px;
+    }
+
+    footer img{
+        width: 70px;    
+        padding: 5px 30px;
+    }
+
+    .animacionContacto:hover{
+        animation: swing;
+        animation-duration: 1s;
+    }
+
+
+/*responsive*/
+
+@media screen and (max-width: 576px) {
+
+    .menuFlex ul{
+        flex-direction: column;
+        width: 0px;
+        justify-content: left;
+    }
+
+     /* .menuFlex ul li a{
+        text-decoration: none;
+    }  */
+
+    .cuentaFlex img{
+        width: 20px;
+        padding: 5px;
+    }
+
+    .imgHome{
+        display: flex;
+        flex-flow: none;
+        justify-content: center;
+    }
+    
+    .imgHome img{
+        width: 180px;
+        height: 280px;
+        margin: 50px 5px;    
+    }
+    
+}
+
+
+
+
